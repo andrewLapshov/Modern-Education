@@ -7,7 +7,6 @@
     <meta name="author" content="Андрей Лапшов">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Нужно исправить: У вас не reset, а normalize -->
     <link rel='stylesheet' href="styles/reset.css">
     <link rel='stylesheet' href="./styles/style.css">
     <title>Научиться учиться</title>
@@ -91,10 +90,10 @@
                 <h2 class="section-title">Видео на TED</h2>
                 <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
                 <div class="video__iframes">
-                    <iframe class="video__iframe" type="text/html" src="https://www.youtube.com/embed/arj7oStGLkU"
-                        frameborder="0" allowfullscreen></iframe>
-                    <iframe class="video__iframe" type="text/html" src="https://www.youtube.com/embed/5MgBikgcWnY"
-                        frameborder="0" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
+                        allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
+                        allowfullscreen></iframe>
                 </div>
             </section>
 
@@ -231,19 +230,23 @@
             </section>
         </main>
 
+        <section class="resources">
+            <h2 class="section-title">Полезные ресурсы</h2>
+            <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+            <ul class="resources__logo-zone">
+                <li><a href="#"><img src="./images/logo/arzamas.svg" alt="Arzamas" class="resources__logo"></a></li>
+                <li><a href="#"><img src="./images/logo/n1.svg" alt="N+1" class="resources__logo"></a></li>
+                <li><a href="#"><img src="./images/logo/strelka.svg" alt="Strelka" class="resources__logo"></a></li>
+                <li><a href="#"><img src="./images/logo/polka.svg" alt="Polka" class="resources__logo"></a></li>
+            </ul>
+        </section>
+
         <footer class="footer">
             <div class="footer__columns">
                 <div class="footer__column footer__column_content-copyright">
                     <div class="logo logo_place_footer"></div>
                     <div class="footer__author">&#169; 2019. Андрей Лапшов</div>
                 </div>
-                <!--   Нужно исправить: Еще раз пересмотрите материал по БЭМ наименованию.
-                    Например, если в задании сказано "Блок footer, элемент column-heading", то запись должен выглядеть так:
-                    footer__column-heading
-                    В случае если "Блок footer, элемент column, модификатор content со значением copyright"
-                    footer__column footer__column_content_copyright
-
-                Эта ошибка во всем проекте, обратите на это внимание-->
                 <div class="footer__column footer__column_content_info">
                     <h3 class="footer__column-heading">О Практикуме</h3>
                     <ul>
@@ -271,20 +274,3 @@
 </body>
 
 </html>
-
-<!-- В целом по работе:
-
-Прекрасная работа! Верстка чистая, использованы семантичные теги.
-
-У вас единственная серьезная ошибка с БЭМ именованием. Повторите теорию.
-
--->
-
-<!-- Указаные выше замечания исправлены.
-
-Помимо этого внесены еще некоторые правки:
-- исправлено отображение header__main-illustration (сделано через div, теперь не вытягивается);
-- в некоторых местах добавлены padding вместо margin;
-- two-columns__paragraph теперь сделан через псевдокласс без margin-bottom в последнем элементе;
-- в footer списки ссылок теперь сделаны через <ul> и <li>
--->
